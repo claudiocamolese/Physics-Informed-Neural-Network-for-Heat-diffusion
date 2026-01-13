@@ -80,3 +80,10 @@ Boundary and initial conditions are incorporated into the data loss ($\text{MSE}
 - **Fourier Loss**: Optionally guides training with an analytical Fourier-based solution.  
 
 For validation and comparison, the solution can also be computed via **Fourier series decomposition**, serving as a ground truth baseline to evaluate the accuracy of the PINN.
+
+# How to run
+To run, simply write
+```bash
+python main.py --train --method [normal, fourier]
+```
+You can either select to train or just do inference using the flag `--train`. You can choose the method by using `--method` and select `normal` (default) or `fourier` method.  
